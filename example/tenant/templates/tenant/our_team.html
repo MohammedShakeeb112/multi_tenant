@@ -1,0 +1,12 @@
+<h1>{{tenant.name}}</h1>
+<h2>{{tenant.subdomain}}</h2>
+<h2>Our Members</h2>
+<ul>
+    {% for member in members %}
+    <li>
+        {{member.name}}</br>
+        {{member.tenant.name}}</br>
+        {{member.tenant.subdomain}}
+    </li>
+    {% endfor %}
+</ul>
